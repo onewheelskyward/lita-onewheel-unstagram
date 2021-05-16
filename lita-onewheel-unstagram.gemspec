@@ -1,9 +1,9 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-onewheel-unstagram"
-  spec.version       = "0.0.0"
+  spec.version       = "0.0.1"
   spec.authors       = ["Andrew Kreps"]
   spec.email         = ["andrew.kreps@gmail.com"]
-  spec.description   = "Wee li'l instagram dereferencer since... it's dumb how they do it"
+  spec.description   = "Wee li'l instagram dereferencer since... I hate igshids"
   spec.summary       = "....."
   spec.homepage      = "https://github.com/onewheelskyward/lita-onewheel-unstagram"
   spec.license       = "MIT"

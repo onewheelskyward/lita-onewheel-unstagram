@@ -9,7 +9,7 @@ module Lita
         fetch_url = response.matches[0][0]
         Lita.logger.info("Fetching #{fetch_url}")
 
-        resp = RestClient.get(fetch_url)
+        resp = RestClient.get(fetch_url, user_agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:21.0) Gecko/20100101 Firefox/21.0')
         quick_down = fetch_url
 
         if m = /window._sharedData = ({.*})\;/.match(resp)
