@@ -14,6 +14,11 @@ module Lita
 
         if m = /window._sharedData = ({.*})\;/.match(resp)
           json = JSON.parse m[1]
+          Lita.logger.info json['entry_data']
+          Lita.logger.info json['entry_data']['PostPage']
+          Lita.logger.info json['entry_data']['PostPage'][0]
+          Lita.logger.info json['entry_data']['PostPage'][0]['graphql']
+          Lita.logger.info json['entry_data']['PostPage'][0]['graphql']['shortcode_media']
           quick_down += " #{json['entry_data']['PostPage'][0]['graphql']['shortcode_media']['display_url']}"
         end
 
